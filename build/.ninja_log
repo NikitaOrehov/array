@@ -1,0 +1,13 @@
+# ninja log v5
+7	144	7248966976422147	function_array/CMakeFiles/functions.dir/sort.c.obj	3749e49d35bf1042
+21	119	7248990931095624	CMakeFiles/array.dir/main.c.obj	8d7f02c557a0821
+17	176	7248990719184538	function_array/CMakeFiles/functions.dir/generation.c.obj	73eff1750cc2e88f
+176	311	7248990720650623	function_array/libfunctions.a	2bb0940c21e1426e
+23	149	7248990719024961	function_array/CMakeFiles/functions.dir/print_array.c.obj	286329d6e44eda61
+87	238	7248981464866986	function_array/CMakeFiles/functions.dir/max_min.c.obj	e1ead630773226c3
+15	167	7248997678047401	function_array/CMakeFiles/functions.dir/sort.c.obj	3749e49d35bf1042
+27	172	7248997678117197	function_array/CMakeFiles/functions.dir/max_min.c.obj	e1ead630773226c3
+31	172	7248997678127176	function_array/CMakeFiles/functions.dir/print_array.c.obj	286329d6e44eda61
+10	193	7248997678306697	CMakeFiles/array.dir/main.c.obj	8d7f02c557a0821
+19	200	7248997678326653	function_array/CMakeFiles/functions.dir/generation.c.obj	73eff1750cc2e88f
+201	330	7248997679720597	function_array/libfunctions.a	2bb0940c21e1426e
