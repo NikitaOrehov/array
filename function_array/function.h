@@ -10,3 +10,6 @@ int find_max(int* array, int size);
 int find_min(int* array, int size);
 void print_array_int(int* array, int size);
 void print_array_double(double* array, int size);
+void quick_sort(int* array, int left, int right);
+int get_min_index(int* array, int left, int right);
+void selection_sort(int* array, int size);

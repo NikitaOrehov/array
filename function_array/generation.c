@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <time.h>
+
 int* create_array_int(int size){
     int* array = malloc(sizeof(int) * size);
     return array;

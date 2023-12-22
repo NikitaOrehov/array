@@ -8,7 +8,7 @@ int main(){
     int* array = create_array_int(size);
     generation_int(array, size);
     print_array_int(array, size);
-    bubble_sort(array, size);
+    quick_sort(array, 0, size);
     print_array_int(array, size);
     return 0;
 }

@@ -146,8 +146,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_function_array: phony || function_array/CMakeFiles/function_array.dir
 
-build function_array/CMakeFiles/function_array.dir/sort.c.obj: C_COMPILER__function_array_unscanned_Debug C$:/Users/User/Project/array/function_array/sort.c || cmake_object_order_depends_target_function_array
-  DEP_FILE = function_array\CMakeFiles\function_array.dir\sort.c.obj.d
+build function_array/CMakeFiles/function_array.dir/bubble_sort.c.obj: C_COMPILER__function_array_unscanned_Debug C$:/Users/User/Project/array/function_array/bubble_sort.c || cmake_object_order_depends_target_function_array
+  DEP_FILE = function_array\CMakeFiles\function_array.dir\bubble_sort.c.obj.d
   FLAGS = -g
   INCLUDES = -IC:/Users/User/Project/array/function_array
   OBJECT_DIR = function_array\CMakeFiles\function_array.dir
@@ -174,6 +174,20 @@ build function_array/CMakeFiles/function_array.dir/print_array.c.obj: C_COMPILER
   OBJECT_DIR = function_array\CMakeFiles\function_array.dir
   OBJECT_FILE_DIR = function_array\CMakeFiles\function_array.dir
 
+build function_array/CMakeFiles/function_array.dir/quick_sort.c.obj: C_COMPILER__function_array_unscanned_Debug C$:/Users/User/Project/array/function_array/quick_sort.c || cmake_object_order_depends_target_function_array
+  DEP_FILE = function_array\CMakeFiles\function_array.dir\quick_sort.c.obj.d
+  FLAGS = -g
+  INCLUDES = -IC:/Users/User/Project/array/function_array
+  OBJECT_DIR = function_array\CMakeFiles\function_array.dir
+  OBJECT_FILE_DIR = function_array\CMakeFiles\function_array.dir
+
+build function_array/CMakeFiles/function_array.dir/selection_sort.c.obj: C_COMPILER__function_array_unscanned_Debug C$:/Users/User/Project/array/function_array/selection_sort.c || cmake_object_order_depends_target_function_array
+  DEP_FILE = function_array\CMakeFiles\function_array.dir\selection_sort.c.obj.d
+  FLAGS = -g
+  INCLUDES = -IC:/Users/User/Project/array/function_array
+  OBJECT_DIR = function_array\CMakeFiles\function_array.dir
+  OBJECT_FILE_DIR = function_array\CMakeFiles\function_array.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target function_array
@@ -182,7 +196,7 @@ build function_array/CMakeFiles/function_array.dir/print_array.c.obj: C_COMPILER
 #############################################
 # Link the static library function_array\libfunction_array.a
 
-build function_array/libfunction_array.a: C_STATIC_LIBRARY_LINKER__function_array_Debug function_array/CMakeFiles/function_array.dir/sort.c.obj function_array/CMakeFiles/function_array.dir/generation.c.obj function_array/CMakeFiles/function_array.dir/max_min.c.obj function_array/CMakeFiles/function_array.dir/print_array.c.obj
+build function_array/libfunction_array.a: C_STATIC_LIBRARY_LINKER__function_array_Debug function_array/CMakeFiles/function_array.dir/bubble_sort.c.obj function_array/CMakeFiles/function_array.dir/generation.c.obj function_array/CMakeFiles/function_array.dir/max_min.c.obj function_array/CMakeFiles/function_array.dir/print_array.c.obj function_array/CMakeFiles/function_array.dir/quick_sort.c.obj function_array/CMakeFiles/function_array.dir/selection_sort.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = function_array\CMakeFiles\function_array.dir
   POST_BUILD = cd .
