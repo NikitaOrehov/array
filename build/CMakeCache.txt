@@ -266,6 +266,42 @@ function_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 function_SOURCE_DIR:STATIC=C:/Users/User/Project/array/function_array
 
+//Value Computed by CMake
+function_array_BINARY_DIR:STATIC=C:/Users/User/Project/array/build/function_array
+
+//Value Computed by CMake
+function_array_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+function_array_SOURCE_DIR:STATIC=C:/Users/User/Project/array/function_array
+
+//Value Computed by CMake
+two_1_BINARY_DIR:STATIC=C:/Users/User/Project/array/build/two
+
+//Value Computed by CMake
+two_1_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+two_1_SOURCE_DIR:STATIC=C:/Users/User/Project/array/two
+
+//Value Computed by CMake
+two_2_BINARY_DIR:STATIC=C:/Users/User/Project/array/build/two
+
+//Value Computed by CMake
+two_2_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+two_2_SOURCE_DIR:STATIC=C:/Users/User/Project/array/two
+
+//Value Computed by CMake
+two_BINARY_DIR:STATIC=C:/Users/User/Project/array/build/two
+
+//Value Computed by CMake
+two_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+two_SOURCE_DIR:STATIC=C:/Users/User/Project/array/two
+
 
 ########################
 # INTERNAL cache entries
@@ -371,7 +407,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

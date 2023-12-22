@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__array_unscanned_Debug
+rule C_COMPILER__array1_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,26 @@ rule C_COMPILER__array_unscanned_Debug
 #############################################
 # Rule for linking C executable.
 
-rule C_EXECUTABLE_LINKER__array_Debug
+rule C_EXECUTABLE_LINKER__array1_Debug
+  command = cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__head_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__head_Debug
   command = cmd.exe /C "$PRE_LINK && C:\msys64\ucrt64\bin\gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
@@ -41,7 +60,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__functions_unscanned_Debug
+rule C_COMPILER__function_array_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -51,7 +70,26 @@ rule C_COMPILER__functions_unscanned_Debug
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER__functions_Debug
+rule C_STATIC_LIBRARY_LINKER__function_array_Debug
+  command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\msys64\ucrt64\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\msys64\ucrt64\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__two_1_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER__two_1_Debug
   command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\msys64\ucrt64\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\msys64\ucrt64\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT

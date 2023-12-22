@@ -152,6 +152,9 @@
 		},
 		{
 			"path" : "function_array/CMakeLists.txt"
+		},
+		{
+			"path" : "two/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

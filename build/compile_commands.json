@@ -1,32 +1,44 @@
 [
 {
   "directory": "C:/Users/User/Project/array/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -g -o CMakeFiles\\array.dir\\main.c.obj -c C:\\Users\\User\\Project\\array\\main.c",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -IC:/Users/User/Project/array/two -g -o CMakeFiles\\array1.dir\\main.c.obj -c C:\\Users\\User\\Project\\array\\main.c",
   "file": "C:\\Users\\User\\Project\\array\\main.c",
-  "output": "CMakeFiles\\array.dir\\main.c.obj"
+  "output": "CMakeFiles\\array1.dir\\main.c.obj"
 },
 {
   "directory": "C:/Users/User/Project/array/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -g -o function_array\\CMakeFiles\\functions.dir\\sort.c.obj -c C:\\Users\\User\\Project\\array\\function_array\\sort.c",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -IC:/Users/User/Project/array/two -g -o CMakeFiles\\head.dir\\head.c.obj -c C:\\Users\\User\\Project\\array\\head.c",
+  "file": "C:\\Users\\User\\Project\\array\\head.c",
+  "output": "CMakeFiles\\head.dir\\head.c.obj"
+},
+{
+  "directory": "C:/Users/User/Project/array/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -g -o function_array\\CMakeFiles\\function_array.dir\\sort.c.obj -c C:\\Users\\User\\Project\\array\\function_array\\sort.c",
   "file": "C:\\Users\\User\\Project\\array\\function_array\\sort.c",
-  "output": "function_array\\CMakeFiles\\functions.dir\\sort.c.obj"
+  "output": "function_array\\CMakeFiles\\function_array.dir\\sort.c.obj"
 },
 {
   "directory": "C:/Users/User/Project/array/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -g -o function_array\\CMakeFiles\\functions.dir\\generation.c.obj -c C:\\Users\\User\\Project\\array\\function_array\\generation.c",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -g -o function_array\\CMakeFiles\\function_array.dir\\generation.c.obj -c C:\\Users\\User\\Project\\array\\function_array\\generation.c",
   "file": "C:\\Users\\User\\Project\\array\\function_array\\generation.c",
-  "output": "function_array\\CMakeFiles\\functions.dir\\generation.c.obj"
+  "output": "function_array\\CMakeFiles\\function_array.dir\\generation.c.obj"
 },
 {
   "directory": "C:/Users/User/Project/array/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -g -o function_array\\CMakeFiles\\functions.dir\\max_min.c.obj -c C:\\Users\\User\\Project\\array\\function_array\\max_min.c",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -g -o function_array\\CMakeFiles\\function_array.dir\\max_min.c.obj -c C:\\Users\\User\\Project\\array\\function_array\\max_min.c",
   "file": "C:\\Users\\User\\Project\\array\\function_array\\max_min.c",
-  "output": "function_array\\CMakeFiles\\functions.dir\\max_min.c.obj"
+  "output": "function_array\\CMakeFiles\\function_array.dir\\max_min.c.obj"
 },
 {
   "directory": "C:/Users/User/Project/array/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -g -o function_array\\CMakeFiles\\functions.dir\\print_array.c.obj -c C:\\Users\\User\\Project\\array\\function_array\\print_array.c",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -g -o function_array\\CMakeFiles\\function_array.dir\\print_array.c.obj -c C:\\Users\\User\\Project\\array\\function_array\\print_array.c",
   "file": "C:\\Users\\User\\Project\\array\\function_array\\print_array.c",
-  "output": "function_array\\CMakeFiles\\functions.dir\\print_array.c.obj"
+  "output": "function_array\\CMakeFiles\\function_array.dir\\print_array.c.obj"
+},
+{
+  "directory": "C:/Users/User/Project/array/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/User/Project/array/function_array -IC:/Users/User/Project/array/two -g -o two\\CMakeFiles\\two_1.dir\\create_twodim_array.c.obj -c C:\\Users\\User\\Project\\array\\two\\create_twodim_array.c",
+  "file": "C:\\Users\\User\\Project\\array\\two\\create_twodim_array.c",
+  "output": "two\\CMakeFiles\\two_1.dir\\create_twodim_array.c.obj"
 }
 ]

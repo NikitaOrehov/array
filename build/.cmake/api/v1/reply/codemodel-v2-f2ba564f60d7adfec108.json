@@ -8,18 +8,20 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2"
+						"string" : "3.10"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						2
 					]
 				},
 				{
@@ -27,7 +29,7 @@
 					"jsonFile" : "directory-function_array-Debug-81125d52f17f3149e347.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.2"
+						"string" : "3.10"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 1,
@@ -35,6 +37,21 @@
 					"targetIndexes" : 
 					[
 						1
+					]
+				},
+				{
+					"build" : "two",
+					"jsonFile" : "directory-two-Debug-f94634f8d63876a43f4b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "two",
+					"targetIndexes" : 
+					[
+						3
 					]
 				}
 			],
@@ -44,7 +61,8 @@
 				{
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"directoryIndexes" : 
 					[
@@ -53,7 +71,8 @@
 					"name" : "array",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						2
 					]
 				},
 				{
@@ -61,11 +80,23 @@
 					[
 						1
 					],
-					"name" : "function",
+					"name" : "function_array",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "two_2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
 					]
 				}
 			],
@@ -73,17 +104,31 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "array::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-array-Debug-b001ec5c68bd62232252.json",
-					"name" : "array",
+					"id" : "array1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-array1-Debug-55889c810ec83e41f90b.json",
+					"name" : "array1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "functions::@642cd1e3b8d9597f9b66",
-					"jsonFile" : "target-functions-Debug-5ae59bc85566e7ec8aac.json",
-					"name" : "functions",
+					"id" : "function_array::@642cd1e3b8d9597f9b66",
+					"jsonFile" : "target-function_array-Debug-6ba94cb3098b319ced6f.json",
+					"name" : "function_array",
 					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "head::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-head-Debug-ca3a5105f2670c1c8c52.json",
+					"name" : "head",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "two_1::@cad32d6da454536a0412",
+					"jsonFile" : "target-two_1-Debug-e55ffa32add670c78eab.json",
+					"name" : "two_1",
+					"projectIndex" : 2
 				}
 			]
 		}

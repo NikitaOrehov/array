@@ -1,4 +1,3 @@
-#pragma once
 void bubble_sort(int* array, int size);
 void swap(int* array, int first, int second);
 int* create_array_int(int size);

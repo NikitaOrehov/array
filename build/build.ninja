@@ -41,38 +41,72 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/User/Project/array/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target array
+# Object build statements for EXECUTABLE target array1
 
 
 #############################################
-# Order-only phony target for array
+# Order-only phony target for array1
 
-build cmake_object_order_depends_target_array: phony || CMakeFiles/array.dir
+build cmake_object_order_depends_target_array1: phony || cmake_object_order_depends_target_function_array
 
-build CMakeFiles/array.dir/main.c.obj: C_COMPILER__array_unscanned_Debug C$:/Users/User/Project/array/main.c || cmake_object_order_depends_target_array
-  DEP_FILE = CMakeFiles\array.dir\main.c.obj.d
+build CMakeFiles/array1.dir/main.c.obj: C_COMPILER__array1_unscanned_Debug C$:/Users/User/Project/array/main.c || cmake_object_order_depends_target_array1
+  DEP_FILE = CMakeFiles\array1.dir\main.c.obj.d
   FLAGS = -g
-  INCLUDES = -IC:/Users/User/Project/array/function_array
-  OBJECT_DIR = CMakeFiles\array.dir
-  OBJECT_FILE_DIR = CMakeFiles\array.dir
+  INCLUDES = -IC:/Users/User/Project/array/function_array -IC:/Users/User/Project/array/two
+  OBJECT_DIR = CMakeFiles\array1.dir
+  OBJECT_FILE_DIR = CMakeFiles\array1.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target array
+# Link build statements for EXECUTABLE target array1
 
 
 #############################################
-# Link the executable array.exe
+# Link the executable array1.exe
 
-build array.exe: C_EXECUTABLE_LINKER__array_Debug CMakeFiles/array.dir/main.c.obj
+build array1.exe: C_EXECUTABLE_LINKER__array1_Debug CMakeFiles/array1.dir/main.c.obj | function_array/libfunction_array.a || function_array/libfunction_array.a
   FLAGS = -g
-  LINK_LIBRARIES = -lfunction_array  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\array.dir
+  LINK_LIBRARIES = function_array/libfunction_array.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\array1.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = array.exe
-  TARGET_IMPLIB = libarray.dll.a
-  TARGET_PDB = array.exe.dbg
+  TARGET_FILE = array1.exe
+  TARGET_IMPLIB = libarray1.dll.a
+  TARGET_PDB = array1.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target head
+
+
+#############################################
+# Order-only phony target for head
+
+build cmake_object_order_depends_target_head: phony || cmake_object_order_depends_target_two_1
+
+build CMakeFiles/head.dir/head.c.obj: C_COMPILER__head_unscanned_Debug C$:/Users/User/Project/array/head.c || cmake_object_order_depends_target_head
+  DEP_FILE = CMakeFiles\head.dir\head.c.obj.d
+  FLAGS = -g
+  INCLUDES = -IC:/Users/User/Project/array/function_array -IC:/Users/User/Project/array/two
+  OBJECT_DIR = CMakeFiles\head.dir
+  OBJECT_FILE_DIR = CMakeFiles\head.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target head
+
+
+#############################################
+# Link the executable head.exe
+
+build head.exe: C_EXECUTABLE_LINKER__head_Debug CMakeFiles/head.dir/head.c.obj | two/libtwo_1.a || two/libtwo_1.a
+  FLAGS = -g
+  LINK_LIBRARIES = two/libtwo_1.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\head.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = head.exe
+  TARGET_IMPLIB = libhead.dll.a
+  TARGET_PDB = head.exe.dbg
 
 
 #############################################
@@ -104,57 +138,57 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target functions
+# Object build statements for STATIC_LIBRARY target function_array
 
 
 #############################################
-# Order-only phony target for functions
+# Order-only phony target for function_array
 
-build cmake_object_order_depends_target_functions: phony || function_array/CMakeFiles/functions.dir
+build cmake_object_order_depends_target_function_array: phony || function_array/CMakeFiles/function_array.dir
 
-build function_array/CMakeFiles/functions.dir/sort.c.obj: C_COMPILER__functions_unscanned_Debug C$:/Users/User/Project/array/function_array/sort.c || cmake_object_order_depends_target_functions
-  DEP_FILE = function_array\CMakeFiles\functions.dir\sort.c.obj.d
+build function_array/CMakeFiles/function_array.dir/sort.c.obj: C_COMPILER__function_array_unscanned_Debug C$:/Users/User/Project/array/function_array/sort.c || cmake_object_order_depends_target_function_array
+  DEP_FILE = function_array\CMakeFiles\function_array.dir\sort.c.obj.d
   FLAGS = -g
   INCLUDES = -IC:/Users/User/Project/array/function_array
-  OBJECT_DIR = function_array\CMakeFiles\functions.dir
-  OBJECT_FILE_DIR = function_array\CMakeFiles\functions.dir
+  OBJECT_DIR = function_array\CMakeFiles\function_array.dir
+  OBJECT_FILE_DIR = function_array\CMakeFiles\function_array.dir
 
-build function_array/CMakeFiles/functions.dir/generation.c.obj: C_COMPILER__functions_unscanned_Debug C$:/Users/User/Project/array/function_array/generation.c || cmake_object_order_depends_target_functions
-  DEP_FILE = function_array\CMakeFiles\functions.dir\generation.c.obj.d
+build function_array/CMakeFiles/function_array.dir/generation.c.obj: C_COMPILER__function_array_unscanned_Debug C$:/Users/User/Project/array/function_array/generation.c || cmake_object_order_depends_target_function_array
+  DEP_FILE = function_array\CMakeFiles\function_array.dir\generation.c.obj.d
   FLAGS = -g
   INCLUDES = -IC:/Users/User/Project/array/function_array
-  OBJECT_DIR = function_array\CMakeFiles\functions.dir
-  OBJECT_FILE_DIR = function_array\CMakeFiles\functions.dir
+  OBJECT_DIR = function_array\CMakeFiles\function_array.dir
+  OBJECT_FILE_DIR = function_array\CMakeFiles\function_array.dir
 
-build function_array/CMakeFiles/functions.dir/max_min.c.obj: C_COMPILER__functions_unscanned_Debug C$:/Users/User/Project/array/function_array/max_min.c || cmake_object_order_depends_target_functions
-  DEP_FILE = function_array\CMakeFiles\functions.dir\max_min.c.obj.d
+build function_array/CMakeFiles/function_array.dir/max_min.c.obj: C_COMPILER__function_array_unscanned_Debug C$:/Users/User/Project/array/function_array/max_min.c || cmake_object_order_depends_target_function_array
+  DEP_FILE = function_array\CMakeFiles\function_array.dir\max_min.c.obj.d
   FLAGS = -g
   INCLUDES = -IC:/Users/User/Project/array/function_array
-  OBJECT_DIR = function_array\CMakeFiles\functions.dir
-  OBJECT_FILE_DIR = function_array\CMakeFiles\functions.dir
+  OBJECT_DIR = function_array\CMakeFiles\function_array.dir
+  OBJECT_FILE_DIR = function_array\CMakeFiles\function_array.dir
 
-build function_array/CMakeFiles/functions.dir/print_array.c.obj: C_COMPILER__functions_unscanned_Debug C$:/Users/User/Project/array/function_array/print_array.c || cmake_object_order_depends_target_functions
-  DEP_FILE = function_array\CMakeFiles\functions.dir\print_array.c.obj.d
+build function_array/CMakeFiles/function_array.dir/print_array.c.obj: C_COMPILER__function_array_unscanned_Debug C$:/Users/User/Project/array/function_array/print_array.c || cmake_object_order_depends_target_function_array
+  DEP_FILE = function_array\CMakeFiles\function_array.dir\print_array.c.obj.d
   FLAGS = -g
   INCLUDES = -IC:/Users/User/Project/array/function_array
-  OBJECT_DIR = function_array\CMakeFiles\functions.dir
-  OBJECT_FILE_DIR = function_array\CMakeFiles\functions.dir
+  OBJECT_DIR = function_array\CMakeFiles\function_array.dir
+  OBJECT_FILE_DIR = function_array\CMakeFiles\function_array.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target functions
+# Link build statements for STATIC_LIBRARY target function_array
 
 
 #############################################
-# Link the static library function_array\libfunctions.a
+# Link the static library function_array\libfunction_array.a
 
-build function_array/libfunctions.a: C_STATIC_LIBRARY_LINKER__functions_Debug function_array/CMakeFiles/functions.dir/sort.c.obj function_array/CMakeFiles/functions.dir/generation.c.obj function_array/CMakeFiles/functions.dir/max_min.c.obj function_array/CMakeFiles/functions.dir/print_array.c.obj
+build function_array/libfunction_array.a: C_STATIC_LIBRARY_LINKER__function_array_Debug function_array/CMakeFiles/function_array.dir/sort.c.obj function_array/CMakeFiles/function_array.dir/generation.c.obj function_array/CMakeFiles/function_array.dir/max_min.c.obj function_array/CMakeFiles/function_array.dir/print_array.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = function_array\CMakeFiles\functions.dir
+  OBJECT_DIR = function_array\CMakeFiles\function_array.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = function_array\libfunctions.a
-  TARGET_PDB = functions.a.dbg
+  TARGET_FILE = function_array\libfunction_array.a
+  TARGET_PDB = function_array.a.dbg
 
 
 #############################################
@@ -181,13 +215,80 @@ build function_array/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build function_array/rebuild_cache: phony function_array/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/User/Project/array/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target two_1
+
+
+#############################################
+# Order-only phony target for two_1
+
+build cmake_object_order_depends_target_two_1: phony || two/CMakeFiles/two_1.dir
+
+build two/CMakeFiles/two_1.dir/create_twodim_array.c.obj: C_COMPILER__two_1_unscanned_Debug C$:/Users/User/Project/array/two/create_twodim_array.c || cmake_object_order_depends_target_two_1
+  DEP_FILE = two\CMakeFiles\two_1.dir\create_twodim_array.c.obj.d
+  FLAGS = -g
+  INCLUDES = -IC:/Users/User/Project/array/function_array -IC:/Users/User/Project/array/two
+  OBJECT_DIR = two\CMakeFiles\two_1.dir
+  OBJECT_FILE_DIR = two\CMakeFiles\two_1.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target two_1
+
+
+#############################################
+# Link the static library two\libtwo_1.a
+
+build two/libtwo_1.a: C_STATIC_LIBRARY_LINKER__two_1_Debug two/CMakeFiles/two_1.dir/create_twodim_array.c.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = two\CMakeFiles\two_1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = two\libtwo_1.a
+  TARGET_PDB = two_1.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build two/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\User\Project\array\build\two && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\User\Project\array -BC:\Users\User\Project\array\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build two/edit_cache: phony two/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build two/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\User\Project\array\build\two && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\User\Project\array -BC:\Users\User\Project\array\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build two/rebuild_cache: phony two/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
-build array: phony array.exe
+build array1: phony array1.exe
 
-build functions: phony function_array/libfunctions.a
+build function_array: phony function_array/libfunction_array.a
 
-build libfunctions.a: phony function_array/libfunctions.a
+build head: phony head.exe
+
+build libfunction_array.a: phony function_array/libfunction_array.a
+
+build libtwo_1.a: phony two/libtwo_1.a
+
+build two_1: phony two/libtwo_1.a
 
 # =============================================================================
 # Folder targets.
@@ -197,19 +298,21 @@ build libfunctions.a: phony function_array/libfunctions.a
 #############################################
 # Folder: C:/Users/User/Project/array/build
 
-build all: phony array.exe function_array/all
+build all: phony array1.exe head.exe function_array/all two/all
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/User/Project/array/build/function_array
 
-build function_array/all: phony function_array/libfunctions.a
+build function_array/all: phony function_array/libfunction_array.a
 
 # =============================================================================
-# Unknown Build Time Dependencies.
-# Tell Ninja that they may appear as side effects of build rules
-# otherwise ordered by order-only dependencies.
+
+#############################################
+# Folder: C:/Users/User/Project/array/build/two
+
+build two/all: phony two/libtwo_1.a
 
 # =============================================================================
 # Built-in targets
@@ -218,14 +321,14 @@ build function_array/all: phony function_array/libfunctions.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/User/Project/array/CMakeLists.txt C$:/Users/User/Project/array/function_array/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeRCCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/User/Project/array/CMakeLists.txt C$:/Users/User/Project/array/function_array/CMakeLists.txt C$:/Users/User/Project/array/two/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeRCCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/User/Project/array/CMakeLists.txt C$:/Users/User/Project/array/function_array/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeRCCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake: phony
+build C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/User/Project/array/CMakeLists.txt C$:/Users/User/Project/array/function_array/CMakeLists.txt C$:/Users/User/Project/array/two/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeRCCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake: phony
 
 
 #############################################

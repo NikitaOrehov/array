@@ -1,11 +1,15 @@
+#include <stdio.h>
+
 void print_array_int(int* array, int size){
     for (int i = 0; i < size; i++){
-        printf("array[%d] = %d;\n", i, array[i]);
+        printf("%d ", array[i]);
     }
+    printf("\n");
 }
 
 void print_array_double(double* array, int size){
     for (int i = 0; i < size; i++){
-        printf("array[%d] = %lf;\n", i, array[i]);
+        printf("%lf ", array[i]);
     }
+    printf("\n");
 }
